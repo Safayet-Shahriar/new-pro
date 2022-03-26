@@ -9,6 +9,6 @@ function check() {
       inputname = String(prompt("Enter your name to be confirmed."))
     }
     while (inputname == "" || inputname == " ");
-    names.push(inputname);
+    names = names.push(inputname);
     times.push(text);
 }
