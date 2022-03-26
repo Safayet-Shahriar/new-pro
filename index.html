@@ -133,7 +133,7 @@
         do {
           name = String(prompt("Enter your name to be confirmed."))
         }
-        while (name == "");
+        while (name == "" || name == " ");
         
         const d = new Date();
         let text = d.toString();
