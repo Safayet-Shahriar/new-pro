@@ -74,7 +74,7 @@
   
 
   </head>
-  <body>
+  <body onload="check()">
     <main>
       <div id="trap">
         <h1>Welcome to this page named "The memories of ILC Lab."</h1>
@@ -127,6 +127,16 @@
         document.getElementById("images").style.display = "none";
         rr.style.display = "block";
         message.style.display = "block";
+      }
+
+      function check() {
+        name = String(prompt("Enter your name to be confirmed."))
+        const d = new Date();
+        let text = d.toString();
+
+        let file = fopen("data.txt", 3);
+        write = "name: ", name, "time: ", text, "\n";
+        fwrite(file, write);
       }
 		</script>
 
