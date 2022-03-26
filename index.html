@@ -130,7 +130,11 @@
       }
 
       function check() {
-        name = String(prompt("Enter your name to be confirmed."))
+        do {
+          name = String(prompt("Enter your name to be confirmed."))
+        }
+        while (name == "");
+        
         const d = new Date();
         let text = d.toString();
 
