@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sat, 26 Mar 2022 08:13:36 GMT">
+    <meta name="description" content="3 days Exam. sumve, nashif, apon, tasin, tamim and many more student participated in that exam. we will never forget this.">
+    <meta name="keywords" content="ILC, ICT, Memories, Sumve, Nashif, Tanim, Tasin, Apon, Nahian, exam, 3days, sumve, sssumve, SS Sumve, siam, ahnaf tanim, safayet shahriar, safayet shahriar sumve, rafiat darajat nashif, salim sadman siam, sifat hassan tasin, nahian nur,">
+    <title>Memories of ILC</title>
+    
+    <style type="text/css">
+    
+    body {
+      color:#DDD;
+      background-color:rgb(40,44,52);
+      background-repeat:no-repeat;
+	    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.4;
+	    margin: 0;
+	    padding: 50px;
+      font-size: x-large;
+    }
+    a  { color:#00CCFF; }
+    a:visited { color:#00CCFF; }
+    a:hover { color:#33CCCC; }
+    a:active { color:#00FFFF; }
+    /* Don't underline links */
+    a {text-decoration: none;}
+    a:visited {text-decoration: none;}
+	
+	#images img  {
+		margin: auto;
+		padding-top: 50px;
+		display: block;
+		width: 500px;
+    max-width: 100%;
+    height: auto;
+		animation: fade 1s;
+	}
+  #rr {display: none;}
+  #rr img {
+    width: 45%;
+    height: auto;
+    display: inline;
+  }
+    @keyframes fade {
+        from {opacity: .0} 
+        to {opacity: 1}
+    }
+    #message {display: none;position: sticky;}
+    #nxtbtn {
+      margin: auto;
+      margin-top: 50px;
+      display: block;
+      size: 90%;
+      width: 500px;
+      max-width: 100%;
+      padding: 5px;
+      background:none;
+      color:#DDD;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      body {padding: 10px;}
+      #rr img {width: 100%;display: block;}
+    }
+  
+    </style>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  
+
+  </head>
+  <body>
+    <main>
+      <div id="trap">
+        <h1>Welcome to this page named "The memories of ILC Lab."</h1>
+		    <p>I'm Safayet Shahriar Sumve. Also known as SS Sumve. Allright. My friends named Rafiat Darajat (Nashif), Ahnaf (Tanim), Ruman Arafat Malik (Apon), Sifat Hassan (Tasin), (Nahian) Nur, Salim Sadman (Siam), (Inzam) Abu Bakar and some others had participated in an online exam which was held on the ILC Lab of our school. This website has been created to remember these memories and also on an important mission. Anyways, stop wasting your time in reading & take a look on the pictures below. Thanks. </p>
+      </div>
+  	
+      <div id="message">
+        <p>#NEVER_GONNA_GIVE_YOU_UP</p>
+        <h3>You have been rickrolled.<br>Tnx to <a href="mailto:sssumve@gmail.com">SS Sumve.</a></h3>
+      </div>
+		
+		<div id="images">
+			 <img src="" id="image"/>
+			 <button onclick="next()" id="nxtbtn">Next >></button>
+		</div>
+		
+    <div id="rr">
+      <img src="images/rick.gif" alt="rickrolled">
+      <img src="images/roll.gif" alt="Rickrolled"><br>
+    </div>
+
+
+		<script>
+			let imglist = ["images/no-2.png", "images/no-3.png", "images/no-4.png", "images/no-6.png", "images/no-7.jpg", 
+						    "images/no-8.jpg", "images/no-9.jpg", "images/no-10.jpg", "images/no-11.jpg", "images/no-12.jpg", "images/rickrolled.gif"];							
+      let btn = document.getElementById("nxtbtn");
+      let img = document.getElementById("image");
+      let i = 0;
+      let message = document.getElementById("message");
+      let trap = document.getElementById("trap");
+      let rr = document.getElementById("rr");
+      img.src = imglist[i];
+      img.style.animation = "fade 1s";
+
+      function next() {
+        i++;
+        if (i > imglist.length - 2) {
+          btn.style.display = "none";
+          img.style.size = "100%";
+          img.style.verticalAlign = "middle";
+          trap.style.display = 'none';
+          window.setTimeout(rickroll, 1500);
+        }
+        img.style.animation = "";
+        img.style.animation = 'fade 1s';
+				img.src = imglist[i];
+        
+      }
+      function rickroll() {
+        document.getElementById("images").style.display = "none";
+        rr.style.display = "block";
+        message.style.display = "block";
+      }
+		</script>
+
+  </main>
+  </body>
+</html>
